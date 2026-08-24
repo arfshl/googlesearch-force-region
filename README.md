@@ -8,6 +8,7 @@ Chromium and Firefox extension for manually set the region and language used by 
   - [Prerequisites](#prerequisites)
   - [Getting started](#getting-started)
   - [Available Scripts](#available-scripts)
+- [Privacy policy](#privacy-policy)
 - [License](#license)
 
 -----
