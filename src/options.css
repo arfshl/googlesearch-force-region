@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+
+html,
+body {
+    margin: 0;
+    padding: 30px;
+    min-height: 0;
+    height: auto;
+}
+
+
+/* Scrollbar transparent styles for regions and languages dropdowns */
+
+#regions,
+#languages {
+    scrollbar-width: thin;
+    scrollbar-color: #9ca3af transparent;
+}
+
+
+#regions::-webkit-scrollbar,
+#languages::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+#regions::-webkit-scrollbar-track,
+#languages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+#regions::-webkit-scrollbar-thumb,
+#languages::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 9999px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    #regions,
+    #languages {
+        scrollbar-color: #4b5563 transparent;
+    }
+
+    #regions::-webkit-scrollbar-thumb,
+    #languages::-webkit-scrollbar-thumb {
+        background: #4b5563;
+    }
+
+}

@@ -1,0 +1,60 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+>
+    <!-- Magnifying glass -->
+    <circle
+        cx="54"
+        cy="54"
+        r="34"
+        fill="none"
+        stroke="#007ACC"
+        stroke-width="10"
+    />
+
+    <line
+        x1="79"
+        y1="79"
+        x2="108"
+        y2="108"
+        stroke="#007ACC"
+        stroke-width="12"
+        stroke-linecap="round"
+    />
+
+    <!-- Slider 1 -->
+    <line
+        x1="34"
+        y1="46"
+        x2="74"
+        y2="46"
+        stroke="#007ACC"
+        stroke-width="6"
+        stroke-linecap="round"
+    />
+
+    <circle
+        cx="48"
+        cy="46"
+        r="6"
+        fill="#007ACC"
+    />
+
+    <!-- Slider 2 -->
+    <line
+        x1="34"
+        y1="62"
+        x2="74"
+        y2="62"
+        stroke="#007ACC"
+        stroke-width="6"
+        stroke-linecap="round"
+    />
+
+    <circle
+        cx="62"
+        cy="62"
+        r="6"
+        fill="#007ACC"
+    />
+</svg>

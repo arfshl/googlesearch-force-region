@@ -1,0 +1,28 @@
+{
+  "name": "googlesearch-force-region",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "tailwindcss -i ./src/options.css -o ./src/options-post.css && tailwindcss -i ./src/popup.css -o ./src/popup-post.css",
+    "build:chromium": "mkdir -p dist/chromium && cp chromium/manifest.json background.js popup.html popup.js options.html options.js region-data.js LICENSE -t dist/chromium/ && cp -r _locales src icons dist/chromium/ && cd dist/chromium && zip -rq ../../googlesearch-force-region-chromium.zip . && cd ../.. && rm -rf dist",
+    "build:firefox": "mkdir -p dist/firefox && cp firefox/manifest.json background.js popup.html popup.js options.html options.js region-data.js LICENSE -t dist/firefox/ && cp -r _locales src icons dist/firefox/ && cd dist/firefox && zip -rq ../../googlesearch-force-region-firefox.zip . && cd ../.. && rm -rf dist",
+    "build": "npm run css && npm run build:chromium && npm run build:firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arfshl/googlesearch-force-region.git"
+  },
+  "keywords": [],
+  "author": "arfshl",
+  "license": "GPLv3",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arfshl/googlesearch-force-region/issues"
+  },
+  "homepage": "https://github.com/arfshl/googlesearch-force-region",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.2.1"
+  }
+}

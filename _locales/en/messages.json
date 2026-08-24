@@ -1,0 +1,52 @@
+{
+  "extensionName": {
+    "message": "Google Search force region"
+  },
+  "extensionDescription": {
+    "message": "Chromium and Firefox extension for manually setting  the region and language used by Google Search."
+  },
+
+  "enabled": {
+    "message": "Enabled"
+  },
+
+  "disabled": {
+    "message": "Disabled"
+  },
+
+  "enableExtension": {
+    "message": "Enable extension"
+  },
+
+  "language": {
+    "message": "Language"
+  },
+
+  "region": {
+    "message": "Region"
+  },
+
+  "settings": {
+    "message": "Settings"
+  },
+
+  "openSettings": {
+    "message": "Open Settings"
+  },
+
+  "save": {
+    "message": "Save"
+  },
+
+  "saved": {
+    "message": "Settings saved, please reload your Google Search tab to apply the changes."
+  },
+
+  "languageDescription": {
+    "message": "Language used for Google Search results."
+  },
+
+  "regionDescription": {
+    "message": "Region used for Google Search results."
+  }
+}

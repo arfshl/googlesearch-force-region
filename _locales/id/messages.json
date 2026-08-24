@@ -1,0 +1,52 @@
+{
+  "extensionName": {
+    "message": "Google Search force region"
+  },
+  "extensionDescription": {
+    "message": "Ekstensi Chromium dan Firefox untuk mengatur manual wilayah dan bahasa yang digunakan Google Penelusuran."
+  },
+
+  "enabled": {
+    "message": "Aktif"
+  },
+
+  "disabled": {
+    "message": "Nonaktif"
+  },
+
+  "enableExtension": {
+    "message": "Aktifkan ekstensi"
+  },
+
+  "language": {
+    "message": "Bahasa"
+  },
+
+  "region": {
+    "message": "Wilayah"
+  },
+
+  "settings": {
+    "message": "Pengaturan"
+  },
+
+  "openSettings": {
+    "message": "Buka Pengaturan"
+  },
+
+  "save": {
+    "message": "Simpan"
+  },
+
+  "saved": {
+    "message": "Pengaturan disimpan, silakan muat ulang tab Google Penelusuran Anda untuk menerapkan perubahan."
+  },
+
+  "languageDescription": {
+    "message": "Bahasa yang digunakan untuk hasil Google Penelusuran."
+  },
+
+  "regionDescription": {
+    "message": "Wilayah yang digunakan untuk hasil Google Penelusuran."
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="extensionName"></title>
+    <link rel="stylesheet" href="./src/popup-post.css">
+</head>
+
+<body class="min-w-70 bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+
+    <main class="p-5">
+
+        <!-- Header extesion name -->
+
+        <h2 class="text-lg font-semibold tracking-tight" data-i18n="extensionName"></h2>
+
+        <!-- Enable/disable button -->
+
+        <div class="mt-5 flex items-center justify-between">
+
+            <span id="enabledText" class="text-sm font-medium" data-i18n="extensionEnabled"></span>
+
+            <label class="relative inline-flex cursor-pointer items-center">
+
+                <input type="checkbox" id="enabled" class="peer sr-only">
+
+                <div class="h-6 w-11 rounded-full bg-gray-300 transition-colors peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 peer-focus:ring-offset-2 dark:bg-gray-700 dark:peer-focus:ring-offset-gray-950"></div>
+
+                <div class="pointer-events-none absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white shadow-sm transition-transform peer-checked:translate-x-5"></div>
+
+            </label>
+
+        </div>
+
+        <!-- Current settings -->
+
+        <div class="mt-6 space-y-3">
+
+            <div class="flex items-center justify-between rounded-lg bg-gray-100 px-3 py-2.5 dark:bg-gray-900">
+
+                <span class="text-sm text-gray-500 dark:text-gray-400" data-i18n="language"></span>
+
+                <strong id="language" class="text-sm font-medium">-</strong>
+
+            </div>
+
+            <div class="flex items-center justify-between rounded-lg bg-gray-100 px-3 py-2.5 dark:bg-gray-900">
+
+                <span class="text-sm text-gray-500 dark:text-gray-400" data-i18n="region"></span>
+
+                <strong id="region" class="text-sm font-medium">-</strong>
+
+            </div>
+
+        </div>
+
+        <!-- Settings button -->
+
+        <button id="options" class="mt-5 w-full rounded-full bg-gray-900 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700 active:scale-[0.98] dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200" data-i18n="openSettings">
+        </button>
+
+    </main>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
