@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "Google Search force region"
+    "message": "Google Search Force Region"
   },
   "extensionDescription": {
-    "message": "Chromium and Firefox extension for manually setting  the region and language used by Google Search."
+    "message": "Extension for manually setting the region and language used by Google Search."
   },
 
   "enabled": {
@@ -39,7 +39,7 @@
   },
 
   "saved": {
-    "message": "Settings saved, please reload your Google Search tab to apply the changes."
+    "message": "Settings saved, Please reload your Google Search tab to apply the changes."
   },
 
   "languageDescription": {

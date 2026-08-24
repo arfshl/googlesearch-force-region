@@ -164,7 +164,7 @@ function createCheckbox(item, type, selectedCode) {
 async function loadSettings() {
 
     const settings =
-        await chrome.storage.sync.get({
+        await chrome.storage.local.get({
             enabled: true,
             language: "en",
             region: "us"
@@ -235,7 +235,7 @@ async function saveSettings() {
 
 
     // Save selected region and language
-    await chrome.storage.sync.set({
+    await chrome.storage.local.set({
         region: region.value,
         language: language.value
     });

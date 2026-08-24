@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "css": "tailwindcss -i ./src/options.css -o ./src/options-post.css && tailwindcss -i ./src/popup.css -o ./src/popup-post.css",
-    "build:chromium": "mkdir -p dist/chromium && cp chromium/manifest.json background.js popup.html popup.js options.html options.js region-data.js LICENSE -t dist/chromium/ && cp -r _locales src icons dist/chromium/ && cd dist/chromium && zip -rq ../../googlesearch-force-region-chromium.zip . && cd ../.. && rm -rf dist",
-    "build:firefox": "mkdir -p dist/firefox && cp firefox/manifest.json background.js popup.html popup.js options.html options.js region-data.js LICENSE -t dist/firefox/ && cp -r _locales src icons dist/firefox/ && cd dist/firefox && zip -rq ../../googlesearch-force-region-firefox.zip . && cd ../.. && rm -rf dist",
+    "build:chromium": "npm run css && mkdir -p dist/chromium && cp chromium/manifest.json background.js popup.html popup.js options.html options.js region-data.js LICENSE -t dist/chromium/ && cp -r _locales src icons dist/chromium/ && cd dist/chromium && zip -rq ../../googlesearch-force-region-chromium.zip . && cd ../.. && rm -rf dist",
+    "build:firefox": "npm run css && mkdir -p dist/firefox && cp firefox/manifest.json background.js popup.html popup.js options.html options.js region-data.js LICENSE -t dist/firefox/ && cp -r _locales src icons dist/firefox/ && cd dist/firefox && zip -rq ../../googlesearch-force-region-firefox.zip . && cd ../.. && rm -rf dist",
     "build": "npm run css && npm run build:chromium && npm run build:firefox"
   },
   "repository": {

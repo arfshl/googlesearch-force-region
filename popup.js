@@ -13,7 +13,7 @@ function translatePage() {
 // Get the UI language of the browser
 async function loadStatus() {
     const settings =
-        await chrome.storage.sync.get({
+        await chrome.storage.local.get({
             enabled: true,
             language: "en",
             region: "us"
@@ -60,7 +60,7 @@ document
         "change",
         async event => {
 
-            await chrome.storage.sync.set({
+            await chrome.storage.local.set({
                 enabled:
                     event.target.checked
             });
@@ -76,7 +76,7 @@ document
         }
     );
 
-// Add an event listener to the save button to trigger the saveSettings function when clicked
+// Open settings page on new tab
 document
     .getElementById("options")
     .addEventListener(

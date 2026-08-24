@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "Google Search force region"
+    "message": "Google Search Force Region"
   },
   "extensionDescription": {
-    "message": "Ekstensi Chromium dan Firefox untuk mengatur manual wilayah dan bahasa yang digunakan Google Penelusuran."
+    "message": "Ekstensi untuk mengatur manual wilayah dan bahasa yang digunakan Google Penelusuran."
   },
 
   "enabled": {
@@ -39,7 +39,7 @@
   },
 
   "saved": {
-    "message": "Pengaturan disimpan, silakan muat ulang tab Google Penelusuran Anda untuk menerapkan perubahan."
+    "message": "Pengaturan disimpan, Silakan muat ulang tab Google Penelusuran Anda untuk menerapkan perubahan."
   },
 
   "languageDescription": {

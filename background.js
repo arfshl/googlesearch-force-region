@@ -17,7 +17,7 @@ const DEFAULT_SETTINGS = {
 
 // get the settings from storage, or use default settings if not set
 async function getSettings() {
-    return await API.storage.sync.get(
+    return await API.storage.local.get(
         DEFAULT_SETTINGS
     );
 }
@@ -118,6 +118,8 @@ async function updateCurrentGoogleTab() {
 
         url.searchParams.delete("hl");
     }
+    // When extension is enabled, update the current Google tab with the new region and language URL parameter.
+    // When disabled, remove the region and language parameters from the URL.
     await API.tabs.update(
         tab.id,
         {
