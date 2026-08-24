@@ -1,4 +1,4 @@
-name: Build
+name: Build Dev
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  build-dev:
     runs-on: ubuntu-latest
 
     steps:
