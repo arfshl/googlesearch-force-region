@@ -2,7 +2,7 @@
   "manifest_version": 3,
 
   "name": "__MSG_extensionName__",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "__MSG_extensionDescription__",
 
   "homepage_url": "https://github.com/arfshl/googlesearch-force-region",
@@ -44,7 +44,6 @@
       "128": "icons/128.png",
       "256": "icons/256.png",
       "512": "icons/512.png"
-
     },
     "default_popup": "popup.html"
   },
@@ -57,7 +56,12 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "@googlesearch-force-region",
-      "strict_min_version": "113.0"
+      "strict_min_version": "113.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   }
 }
