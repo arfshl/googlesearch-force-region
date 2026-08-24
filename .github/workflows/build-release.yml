@@ -51,6 +51,7 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
+          generate_release_notes: true
           files: |
             googlesearch-force-region-chromium.zip
             googlesearch-force-region-firefox.zip
