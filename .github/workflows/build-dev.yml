@@ -1,0 +1,68 @@
+name: Build
+
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - 'chromium/**'
+      - 'firefox/**'
+      - '*.js'
+      - '*.json'
+      - '*.html'
+      - '_locales/**'
+      - 'icons/**'
+      - 'src/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Select build ref
+        id: ref
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "ref=$(git tag --sort=-v:refname | head -n 1)" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout selected ref
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ steps.ref.outputs.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build extension for chromium
+        run: npm run build:chromium
+
+      - name: Build extension for firefox
+        run: npm run build:firefox
+
+      - name: Upload Chromium build
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-search-region-chromium
+          path: googlesearch-force-region-chromium.zip
+
+      - name: Upload Firefox build
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-search-region-firefox
+          path: googlesearch-force-region-firefox.zip
