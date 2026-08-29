@@ -1,8 +1,18 @@
 # ![](./icons/48.png) googlesearch-force-region
 Chromium and Firefox extension for manually set the region and language used by Google Search
 
+-----
+
+<p align="center">
+<a href="https://addons.mozilla.org/addon/googlesearch-force-region/"><img src="./assets/amo.png" alt="Firefox"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/google-search-force-regio/iffbdecgandllebnaknhggddhmnfkfka"><img src="./assets/msedge.png" alt="Microsoft Edge"></a>
+<a href=""><img src="./assets/opera.png" alt="Opera"></a>
+</p>
+
+
 ## Contents
-- [How to use this extension](#how-to-use-this-extension)
+- [Installation](#installation)
+- [How to use this extension?](#how-to-use-this-extension)
 - [How this extension work?](#how-this-extension-work)
 - [Development](#development)
   - [Prerequisites](#prerequisites)
@@ -17,12 +27,20 @@ Chromium and Firefox extension for manually set the region and language used by 
 ![](./assets/img2.png)
 ![](./assets/img3.png)
 
-# How to use this extension
-1. Install this extension via .zip file with developer mode or debug mode. .zip file can be found on [release](https://github.com/arfshl/googlesearch-force-region/releases/latest)
+-----
 
-2. Toolbar pop-up can be used to enable/disable extension, see current region and languages, and entering main settings.
+# Installation
 
-3. On main settings, you can choose region and languages from the table, the default settings is US region with English languages. Click "Save" to save your settings and don't forget to reload your Google Search tabs after it.
+1. Firefox - [Mozilla Add-ons](https://addons.mozilla.org/addon/googlesearch-force-region/)
+2. Microsoft Edge - [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/google-search-force-regio/iffbdecgandllebnaknhggddhmnfkfka)
+3. Opera - [Opera add-ons]()
+4. Other Chromium-based browsers (Chrome, Brave, Vivaldi, Arc, etc..) - [Download from releases](https://github.com/arfshl/googlesearch-force-region/releases/latest), enable "Developer Mode" options, and install from "Load Unpacked" options
+
+# How to use this extension?
+
+1. Toolbar pop-up can be used to enable/disable extension, see current region and languages, and entering main settings.
+
+2. On main settings, you can choose region and languages from the table, the default settings is US region with English languages. Click "Save" to save your settings and don't forget to reload your Google Search tabs after it.
 
 # How this extension work?
 Beside user settings, Google Search define region and languange with URL parameter, `hl` for language, `gl` for region, with standard, two-letter ISO 3166-1 Alpha-2 format, for example `us` for United States region and `en`for english language. Full lists [here](https://github.com/arfshl/googlesearch-force-region/blob/main/region-data.js)
