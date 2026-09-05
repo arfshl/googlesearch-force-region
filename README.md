@@ -1,12 +1,13 @@
-# ![](./icons/48.png) googlesearch-force-region
+# ![](./icons/48.png) Google Search Force Region
 Chromium and Firefox extension for manually set the region and language used by Google Search
 
 -----
 
+
 <p align="center">
-<a href="https://addons.mozilla.org/addon/googlesearch-force-region/"><img src="./assets/amo.png" alt="Firefox"></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/google-search-force-regio/iffbdecgandllebnaknhggddhmnfkfka"><img src="./assets/msedge.png" alt="Microsoft Edge"></a>
-<a href=""><img src="./assets/opera.png" alt="Opera"></a>
+<a href=""><img src="https://developer.chrome.com/static/docs/webstore/branding/image/UV4C4ybeBTsZt43U4xis.png" alt="Firefox"></a>
+<a href="https://addons.mozilla.org/addon/googlesearch-force-region/"><img src="https://blog.mozilla.org/addons/files/2015/11/get-the-addon.png" alt="Firefox"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/google-search-force-regio/iffbdecgandllebnaknhggddhmnfkfka"><img src="https://learn.microsoft.com/en-us/microsoft-edge/extensions/publish/add-ons-badge-images/microsoft-edge-add-ons-badge.png" alt="Microsoft Edge"></a>
 </p>
 
 
@@ -29,12 +30,13 @@ Chromium and Firefox extension for manually set the region and language used by 
 
 -----
 
-# Installation
 
-1. Firefox - [Mozilla Add-ons](https://addons.mozilla.org/addon/googlesearch-force-region/)
-2. Microsoft Edge - [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/google-search-force-regio/iffbdecgandllebnaknhggddhmnfkfka)
-3. Opera - [Opera add-ons]()
-4. Other Chromium-based browsers (Chrome, Brave, Vivaldi, Arc, etc..) - [Download from releases](https://github.com/arfshl/googlesearch-force-region/releases/latest), enable "Developer Mode" options, and install from "Load Unpacked" options
+# Installation
+1. Chromium-based Browser (Google Chrome, Opera, Brave, Vivaldi, Arc, etc.) - [Chrome Web Store]()
+2. Firefox - [Mozilla Add-ons](https://addons.mozilla.org/addon/googlesearch-force-region/)
+3. Microsoft Edge - [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/google-search-force-regio/iffbdecgandllebnaknhggddhmnfkfka)
+4. GitHub Releases - [Download from releases](https://github.com/arfshl/googlesearch-force-region/releases/latest), enable "Developer Mode" options, and install from "Load Unpacked" options
+
 
 # How to use this extension?
 
